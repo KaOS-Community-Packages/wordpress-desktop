@@ -1,6 +1,6 @@
 pkgname=wordpress-desktop
 pkgver=1.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A desktop app that gives WordPress a permanent home in your dock"
 arch=('x86_64')
 url="https://desktop.wordpress.com/"
@@ -14,5 +14,5 @@ package() {
   chmod -R 755 "$pkgdir/usr"
   rm -rf ${pkgdir}/usr/share/doc
   install -dm755 ${pkgdir}/usr/bin
-  ln -s ${pkgdir}/usr/share/wpcom/wpcom ${pkgdir}/usr/bin/${pkgname}
+  ln -s /usr/share/wpcom/wpcom ${pkgdir}/usr/bin/${pkgname}
 }
