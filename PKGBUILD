@@ -1,12 +1,12 @@
 pkgname=wordpress-desktop
-pkgver=1.3.3
+pkgver=1.6.0
 pkgrel=1
 pkgdesc="A desktop app that gives WordPress a permanent home in your dock"
 arch=('x86_64')
 url="https://desktop.wordpress.com/"
 license=('GPLv2')
 depends=('systemd' 'gconf' 'gtk2' 'nss' 'alsa-lib' 'libxtst' 'libnotify' 'fontconfig')
-sha256sums=('09b41fdd4f1f26812b41f426fb1c4d9b816052c59c7a208371504880b22bcc16')
+sha256sums=('a28274d40b97596169d3bdc920e2db2e386b96ccc34143a86a5cc4e646a4b902')
 source=("https://public-api.wordpress.com/rest/v1.1/desktop/linux/download?type=deb")
 
 package() {
